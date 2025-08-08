@@ -1,0 +1,27 @@
+
+[
+  {
+    "title": "Data Analytics Dashboard",
+    "desc": "A Streamlit application for data visualization and analysis with MongoDB integration. Features real-time data processing and interactive charts.",
+    "github": "https://github.com/yourname/analytics-dashboard",
+    "live": "https://yourname-analytics.replit.app",
+    "youtube": "",
+    "tags": ["Python", "Streamlit", "MongoDB", "Data Visualization"]
+  },
+  {
+    "title": "MongoDB API Service",
+    "desc": "RESTful API service providing efficient CRUD operations for MongoDB databases with authentication and comprehensive documentation.",
+    "github": "https://github.com/yourname/mongodb-api",
+    "live": "https://yourname-api.replit.app",
+    "youtube": "",
+    "tags": ["Python", "FastAPI", "MongoDB", "REST API"]
+  },
+  {
+    "title": "Web Scraping Tools",
+    "desc": "Python-based tools for web data extraction and processing, built with BeautifulSoup and requests libraries.",
+    "github": "https://github.com/yourname/web-scraper",
+    "live": "",
+    "youtube": "",
+    "tags": ["Python", "BeautifulSoup", "Web Scraping", "Data Processing"]
+  }
+]
