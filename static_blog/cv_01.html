@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OpenCV Beginner Image Operations – Zoro Image Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A comprehensive guide to foundational OpenCV operations using Python, demonstrated with image processing techniques on a sample image.">
+  <style>
+    body { max-width: 700px; margin: 2rem auto; font-family: sans-serif; line-height: 1.7; padding: 0 1rem; }
+    h1, h2, h3 { color: #1a4fa0; }
+    pre { background: #f4f4f4; padding: 1em; overflow-x: auto; }
+    code { background: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
+    .meta { color: #888; font-size: 0.95em; margin-bottom: 2em; }
+    a { color: #1a4fa0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .back { display: inline-block; margin-bottom: 2em; }
+  </style>
+</head>
+<body>
+  <a href="../" class="back">&larr; Back to Portfolio</a>
+  <h1>OpenCV Beginner Image Operations – Zoro Image Demo</h1>
+  <div class="meta">
+    <strong>Date:</strong> 2025-01-10 <br>
+    <strong>Tags:</strong> OpenCV, Python, Image Processing, Computer Vision, Tutorial
+  </div>
+  <div>
+    <p>🖼️ OpenCV Beginner Image Operations – Zoro Image Demo
+This notebook demonstrates foundational OpenCV operations using a sample image of Zoro. It walks through reading, displaying, saving, editing, and annotating images using Python's cv2 module.</p>
+<p>📁 Contents
+Section Description
+1. 📥 Image Reading  Load image as NumPy array using cv2.imread()
+2. 🖥️ Image Display Display image in a window using cv2.imshow()
+3. 💾 Image Saving   Save the image to disk using cv2.imwrite()
+4. ℹ️ Image Properties  Extract shape info (height, width, channels)
+5. 🌈 Color Space Conversion Convert from BGR to Grayscale
+6. 🔍 Image Resizing Resize the image with custom dimensions
+7. 📝 Text Overlay   Add text using cv2.putText()
+8. 📏 Drawing Lines  Draw straight lines with coordinates and color
+9. 🟢 Drawing Circles    Add circles on the image
+10. ◼️ Drawing Rectangles   Draw rectangles using corner coordinates
+11. 🥚 Drawing Ellipses  Draw rotated ellipses for highlights
+12. 🌑 Grayscale Load    Reload image directly in grayscale
+🛠️ Requirements
+Ensure you have Python and OpenCV installed:</p>
+<p>pip install opencv-python
+📸 Example Snippet
+import cv2
+img = cv2.imread('zoro.jpg')
+cv2.imshow('Zoro Vice-captain', img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+🧠 Key Notes
+OpenCV loads images in BGR format by default, not RGB.</p>
+<p>cv2.waitKey(0) waits indefinitely for a key event.</p>
+<p>Drawing functions include:</p>
+<p>cv2.line()
+cv2.circle()
+cv2.rectangle()
+cv2.ellipse()
+Text overlay uses cv2.putText() with font, color, and scale control.</p>
+<p>Getting Started with Image Processing
+This tutorial covers the fundamental building blocks of computer vision with OpenCV. Whether you're new to image processing or looking to refresh your knowledge, these basic operations form the foundation for more advanced computer vision applications.</p>
+<p>The examples shown here demonstrate practical, hands-on approaches to working with images in Python, making it perfect for beginners who want to start their computer vision journey.</p>
+<p>static_base_url = "http://localhost:8502/static_blog"  # or your deployed URL
+full_url = f"{static_base_url}/{urllib.parse.quote(post['slug'])}.html"
+st.markdown(
+    f"<a href='{full_url}' target='_blank' style='color:#1a4fa0;font-weight:bold;'>Read more &rarr;</a>",
+    unsafe_allow_html=True
+)</p>
+  </div>
+</body>
+</html>

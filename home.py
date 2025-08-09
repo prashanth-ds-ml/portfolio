@@ -118,14 +118,15 @@ if slug:
         st.markdown("---")
         st.markdown(post["content"])
         st.markdown("---")
-        st.markdown(f"[← Back to Blog](./)")
+        st.markdown("<a href='/' style='font-weight:600;color:#2563eb;'>&larr; Back to Blog</a>", unsafe_allow_html=True)
 else:
     posts = read_markdown_posts()
     if not posts:
         st.info("No blog posts yet. Add Markdown files to the blog/ folder.")
     else:
         for post in posts:
-            st.markdown(f"### [{post['title']}](/?post={urllib.parse.quote(post['slug'])})")
+            blog_url = f"/static_blog/{post['slug']}.html"
+            st.markdown(f"### {post['title']}")
             if post.get("date"):
                 st.caption(post["date"])
             if post.get("summary"):
@@ -133,6 +134,7 @@ else:
             tags = post.get("tags", [])
             if tags:
                 st.markdown(" ".join([f"<span class='badge'>{t}</span>" for t in tags]), unsafe_allow_html=True)
+            st.markdown(f"<a href='{blog_url}' target='_blank' style='display:inline-block;margin-top:8px;margin-bottom:8px;font-weight:600;color:#2563eb;'>Read more &rarr;</a>", unsafe_allow_html=True)
             st.markdown("---")
 
 # --- EXTERNAL LINKS WITH PREVIEW ---
