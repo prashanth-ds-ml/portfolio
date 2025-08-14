@@ -1,0 +1,16 @@
+site_name: Prashanth — Blog
+site_url: https://prashanth-ds-ml.github.io/portfolio/
+repo_url: https://github.com/prashanth-ds-ml/portfolio
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - content.code.copy
+
+# MkDocs looks in "docs/" by default
+nav:
+  - Home: index.md
+  - Blog:
+      - Hello Blog: blog/hello-blog.md
