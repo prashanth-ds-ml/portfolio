@@ -13,4 +13,4 @@ theme:
 nav:
   - Home: index.md
   - Blog:
-      - Hello Blog: blog/hello-blog.md
+      - Hello Blog: blogs/hello-blog.md
