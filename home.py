@@ -109,7 +109,9 @@ if not posts:
     st.info("No blog posts yet. Add Markdown files to the blog/ folder.")
 else:
     for post in posts:
-        blog_url = f"/static_blog/{post['slug']}.html"
+        github_pages_base = "https://yourusername.github.io/your-repo/blogs"
+        blog_url = f"{github_pages_base}/{post['slug']}.html"
+        
         st.markdown(f"### {post['title']}")
         if post.get("date"):
             st.caption(post["date"])
