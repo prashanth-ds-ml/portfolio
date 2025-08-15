@@ -109,9 +109,8 @@ if not posts:
     st.info("No blog posts yet. Add Markdown files to the blog/ folder.")
 else:
     for post in posts:
-        github_pages_base = "https://yourusername.github.io/your-repo/blogs"
-        blog_url = f"{github_pages_base}/{post['slug']}.html"
-        
+        # MkDocs builds blog URLs as /portfolio/blogs/{slug}/
+        mkdocs_blog_url = f"https://prashanth-ds-ml.github.io/portfolio/blogs/{post['slug']}/"
         st.markdown(f"### {post['title']}")
         if post.get("date"):
             st.caption(post["date"])
@@ -120,7 +119,7 @@ else:
         tags = post.get("tags", [])
         if tags:
             st.markdown(" ".join([f"<span class='badge'>{t}</span>" for t in tags]), unsafe_allow_html=True)
-        st.markdown(f"<a href='{blog_url}' target='_blank' style='display:inline-block;margin-top:8px;margin-bottom:8px;font-weight:600;color:#2563eb;'>Read more &rarr;</a>", unsafe_allow_html=True)
+        st.markdown(f"<a href='{mkdocs_blog_url}' target='_blank' style='display:inline-block;margin-top:8px;margin-bottom:8px;font-weight:600;color:#2563eb;'>Read more &rarr;</a>", unsafe_allow_html=True)
         st.markdown("---")
 
 # --- EXTERNAL LINKS WITH PREVIEW ---
