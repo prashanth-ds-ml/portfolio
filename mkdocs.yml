@@ -12,7 +12,7 @@ theme:
 nav:
   - Home: index.md
   - Blog:
-      - Hello Blog: blogs/2025-08-15-hello-blog.md
+      - Hello Blog: blogs/hello-blog.md
 
 plugins:
   - search
