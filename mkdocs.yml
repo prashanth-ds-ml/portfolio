@@ -1,112 +1,23 @@
-# ───────────────────────────────────────────────────────────────────────────────
-# Site metadata
-# ───────────────────────────────────────────────────────────────────────────────
 site_name: Prashanth — Portfolio & Blog
-site_description: Practical AI projects, notes, and demos by Prashanth.
 site_url: https://prashanth-ds-ml.github.io/portfolio/
 repo_url: https://github.com/prashanth-ds-ml/portfolio
-repo_name: prashanth-ds-ml/portfolio
-edit_uri: edit/main/docs/
 
-# ───────────────────────────────────────────────────────────────────────────────
-# Theme: Material
-# ───────────────────────────────────────────────────────────────────────────────
 theme:
   name: material
-  language: en
-  icon:
-    repo: fontawesome/brands/github
-  logo: assets/logo.png         # optional: put docs/assets/logo.png
-  favicon: assets/logo.png      # optional: put docs/assets/logo.png or favicon.png
-  font:
-    text: Inter
-    code: JetBrains Mono
-  palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.footer
-    - toc.integrate
-    - toc.follow
     - content.code.copy
-    - content.action.edit
-    - content.tabs.link
-    - search.suggest
-    - search.highlight
 
-# ───────────────────────────────────────────────────────────────────────────────
-# Navigation (ensure these files exist under docs/)
-# ───────────────────────────────────────────────────────────────────────────────
 nav:
   - Home: index.md
-  - About: about.md
-  - Projects:
-      - Overview: projects.md
-      - MSME RAG Chatbot: projects/msme-rag.md
-      - SmartCBC (Blood Cells): projects/smartcbc.md
-      - Stock Planner: projects/stock-planner.md
   - Blog:
       - Hello Blog: blogs/2025-08-15-hello-blog.md
-  - Resume: resume.md
-  - Contact: contact.md
 
-# ───────────────────────────────────────────────────────────────────────────────
-# Markdown extensions (nice extras, all supported by mkdocs-material)
-# ───────────────────────────────────────────────────────────────────────────────
-markdown_extensions:
-  - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - md_in_html
-  - toc:
-      permalink: true
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-
-# ───────────────────────────────────────────────────────────────────────────────
-# Plugins (keep minimal; 'search' is built-in)
-# ───────────────────────────────────────────────────────────────────────────────
 plugins:
   - search
 
-# ───────────────────────────────────────────────────────────────────────────────
-# Extra (social icons, analytics, etc.)
-# ───────────────────────────────────────────────────────────────────────────────
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/prashanth-ds-ml
-      name: GitHub
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/<your-handle>/
-      name: LinkedIn
-    - icon: material/email
-      link: mailto:<your-email@example.com>
-      name: Email
-
-# Optional: include custom CSS/JS later if you want
-# extra_css:
-#   - assets/styles.css
-# extra_javascript:
-#   - assets/analytics.js
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
